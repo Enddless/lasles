@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/lasles/static/css/main.8ce4a941.css",
+    "main.js": "/lasles/static/js/main.58a124fb.js",
+    "static/media/Rubik-Regular.ttf": "/lasles/static/media/Rubik-Regular.0f56ab0b295fd9fca620.ttf",
+    "static/media/Rubik-Medium.ttf": "/lasles/static/media/Rubik-Medium.c9459b0b7c4e69f6716b.ttf",
+    "static/media/Rubik-Bold.ttf": "/lasles/static/media/Rubik-Bold.d62658f24eb7c7dc739e.ttf",
+    "static/media/map.png": "/lasles/static/media/map.f2d4ef4aacc641c1b477.png",
+    "static/media/info.png": "/lasles/static/media/info.759a7e19a2bd20b5427e.png",
+    "static/media/computer.png": "/lasles/static/media/computer.7750268b4b8867e02262.png",
+    "static/media/computer-overlay.png": "/lasles/static/media/computer-overlay.afee699ea2504690278a.png",
+    "static/media/info-overlay.png": "/lasles/static/media/info-overlay.d4f9de99773377c7724e.png",
+    "static/media/sprite.svg": "/lasles/static/media/sprite.c94a2d6687645b111d743831981044e3.svg",
+    "static/media/box.svg": "/lasles/static/media/box.dff3e894243222e155e1baf6450f481d.svg",
+    "static/media/slick.svg": "/lasles/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/lasles/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/lasles/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/lasles/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/lasles/index.html",
+    "main.8ce4a941.css.map": "/lasles/static/css/main.8ce4a941.css.map",
+    "main.58a124fb.js.map": "/lasles/static/js/main.58a124fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ce4a941.css",
+    "static/js/main.58a124fb.js"
+  ]
+}
