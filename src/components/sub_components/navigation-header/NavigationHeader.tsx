@@ -13,7 +13,7 @@ function NavigationHeader() {
         {links.links.map((link, index) => {
           return (
             <li key={index} className={css.navigationItem}>
-              <a href="/" className={css.link}>
+              <a href="/lasles" className={css.link}>
                 {link}
               </a>
             </li>

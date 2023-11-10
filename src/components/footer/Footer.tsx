@@ -16,7 +16,7 @@ function Footer() {
 
           <SocialLink />
 
-          <a href="/" className={css.copyright}>
+          <a href="/lasles" className={css.copyright}>
             ©2020LaslesVPN
           </a>
         </div>

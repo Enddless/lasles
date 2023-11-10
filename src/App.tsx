@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 
 import { ModalState } from "./context/modalcontext";
+import AppRoutes from "./routes";
 
 
 function App() {
@@ -11,11 +12,7 @@ function App() {
 
   return (
     <ModalState>
-      <div className={css.container}>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
+      <AppRoutes />
     </ModalState>
   );
 }

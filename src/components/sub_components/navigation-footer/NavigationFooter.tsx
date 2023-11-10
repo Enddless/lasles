@@ -19,7 +19,7 @@ function NavigationFooter() {
                 {link.links.map((element, index) => {
                   return (
                     <li key={index}>
-                      <a href="/" className={css.link}>
+                      <a href="/lasles" className={css.link}>
                         {element}
                       </a>
                     </li>
