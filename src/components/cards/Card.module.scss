@@ -1,0 +1,50 @@
+@import "../../styles/root.module.scss";
+
+.card {
+  grid-column: span 4;
+  @include flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: $white;
+  //margin: 0 25px;
+  box-sizing: $border-box;
+  padding: 79px 0 0;
+  min-height: 760px;
+  cursor: pointer;
+  position: relative;
+  border-radius: $border-radius-10px;
+  border: 2px solid $grayBorder;
+
+  &:hover,
+  &:active {
+    border: 2px solid $red;
+  }
+
+  .title {
+    color: $dark-gray;
+    font-family: $font-rubik-medium;
+    font-size: $font-size-18px;
+    line-height: $line-height-30px;
+    margin: 30px 0;
+  }
+
+  .option {
+    position: absolute;
+    bottom: 50px;
+
+    .price {
+      font-family: $font-rubik-medium;
+      font-size: $font-size-25px;
+      line-height: $line-height-30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .card {
+    grid-column: span 12;
+    margin-bottom:30px;
+  }
+}

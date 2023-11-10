@@ -1,0 +1,64 @@
+@import "../../styles/root.module.scss";
+
+.slide {
+  height: 233px;
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: $border-radius-10px;
+  background: $white;
+  padding: 30px;
+  margin: 36px 0 59px;
+  color: $dark-gray;
+  line-height: $line-height-30px;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-border-radius: $border-radius-10px;
+  -moz-border-radius: $border-radius-10px;
+  -ms-border-radius: $border-radius-10px;
+  -o-border-radius: $border-radius-10px;
+}
+.userContainer {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfo {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.name {
+  font-size: $font-size-18px;
+}
+
+.country {
+  font-size: $font-size-14px;
+  color: $gray;
+  margin-bottom: 10px;
+}
+
+.rating {
+  @include flex;
+  align-items: center;
+}
+.total {
+  margin-right: 10px;
+}
+
+.comment {
+  font-size: $font-size-16px;
+}
+
+@media screen and (max-width: 900px) {
+  .slide {
+    height: 300px;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 655px) {
+  .slide {
+    margin: 36px 0px 59px;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../styles/root.module.scss";
+
+.slick-slider {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 50px;
+  padding-bottom: 180px;
+  align-items: center;
+}
+.slick-list {
+  max-width:100%;
+}
+.slick-track {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: column;
+  column-gap: 50px;
+  width: inherit;
+}
+
+//ARROWS
+.slick-arrow {
+  position: static;
+  width: 60px;
+  height: 60px;
+}
+
+.slick-prev,
+.slick-next {
+  grid-row: 2;
+  border-radius: 50%;
+  border: 1px solid $red;
+  grid-column: 9 / 13;
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+
+.slick-next {
+
+  margin-left:65px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1;
+  font-family: $font-rubik-regular;
+  color: $red;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: $red;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-next:focus:before {
+  color: $white;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.5;
+}
+
+//DOTS
+
+.slick-list {
+  grid-column: span 12;
+  grid-row: 1;
+}
+
+.slick-dots {
+  position: static;
+  grid-column: 1 / 9;
+  text-align: left;
+  grid-row: 2;
+}
+
+.slick-dots li button:before {
+  background: $dots;
+  opacity: 1;
+  font-size: 20px;
+  content: "";
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+  border-radius: 5px;
+  width: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+  background: $red;
+  width: 100%;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.slick-track:before {
+  content: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  .slick-track,
+  .slick-slider {
+    column-gap: 10px;
+  }
+  .slick-next {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 655px) {
+  .slick-list .slick-track {
+    column-gap:5px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/root.module.scss";
+
+.comments {
+  padding-left: $size150px;
+}
+.wrapper {
+  @include grid;
+}
+.row {
+  grid-column: 4 / span 6;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .comments {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .row {
+    grid-column: span 12;
+  }
+}

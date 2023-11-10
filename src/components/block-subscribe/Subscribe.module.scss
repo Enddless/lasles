@@ -1,0 +1,66 @@
+@import "../../styles/root.module.scss";
+
+.wrapper {
+  @include wrapper;
+}
+.subscribe {
+  grid-column: span 12;
+  position: absolute;
+  @include grid;
+  justify-items: end;
+  align-items: center;
+  height: 233px;
+  box-sizing: $border-box;
+  background: $white;
+  border-radius: $border-radius-10px;
+  box-shadow: 0 4px 4px $shadow;
+  bottom: -114px;
+  padding: 40px 70px;
+  padding-bottom: 0;
+}
+.blockLeft,
+.blockRight {
+  grid-column: span 6;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1010px) {
+  .subscribe {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .subscribe {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .subscribe {
+    height: 0;
+    min-height: 300px;
+    bottom: -146px;
+  }
+
+  .blockLeft {
+    grid-column: span 9;
+    vertical-align: middle;
+  }
+  .blockRight {
+    grid-column: span 3;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .blockLeft,
+  .blockRight {
+    grid-column: span 12;
+  }
+  .subscribe {
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 475px) {
+  .subscribe {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/root.module.scss";
+
+.wrapper {
+  @include wrapper;
+}
+.container {
+  grid-column: span 12;
+  grid-row: 1;
+  padding: 43px 0;
+  @include grid;
+  align-items: center;
+  align-content: center;
+  color: $gray;
+
+}

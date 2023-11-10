@@ -1,0 +1,32 @@
+@import "../../../styles/root.module.scss";
+
+.list {
+  @include flex;
+  flex-direction: column;
+  color: $gray;
+}
+.listItem {
+  @include flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  font-size: $font-size-14px;
+  line-height: $line-height-30px;
+}
+
+.circle {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.marginbottom {
+  margin-bottom: 10px;
+}
+
+.nonecircle {
+  margin-right: 20px;
+}
+@media screen and (max-width: 765px) {
+  .listItem {
+    font-size: $font-size-18px;
+  }
+}

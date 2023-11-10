@@ -1,0 +1,23 @@
+@import "../../../styles/root.module.scss";
+
+
+.logo {
+    @include flex;
+    align-items: center;
+    grid-column: span 3;
+    color: $dark-gray;
+    font-weight: 500;
+    width:100%;
+    cursor:pointer;
+    .image {margin-right:10px;}
+
+    .titleRight {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    .logo {
+        grid-column: span 8;
+    }
+  }

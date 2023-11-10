@@ -1,0 +1,20 @@
+@import "../../styles/root.module.scss";
+
+.wrapper {
+  @include wrapper;
+}
+.map {
+  grid-column: span 12;
+  text-align: center;
+  padding-top: 101px;
+}
+.row {
+  grid-column: 4 / span 6;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    grid-column: span 12;
+  }
+}

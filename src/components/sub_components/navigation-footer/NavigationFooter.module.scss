@@ -1,0 +1,46 @@
+@import "../../../styles/root.module.scss";
+
+.navigation {
+  grid-column: 7 / 13;
+  line-height: $line-height-30px;
+  color: $gray;
+}
+.navigationContainer {
+  @include flex;
+  justify-content: space-between;
+}
+.navigationItem {
+  @include flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: $font-size-16px;
+  min-width: 123px;
+}
+.title {
+  font-size: $font-size-18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.link:hover {
+  font-weight: 600;
+  color: $red;
+  @include transition;
+}
+
+@media screen and (max-width: 900px) {
+  .navigation {
+    grid-column: 6 / 13;
+  }
+}
+@media screen and (max-width: 765px) {
+  .navigation {
+    grid-column: span 12;
+  }
+}
+@media screen and (max-width: 410px) {
+  .navigationContainer {
+    flex-wrap: wrap;
+  }
+}

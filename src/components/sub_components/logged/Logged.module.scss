@@ -1,0 +1,9 @@
+@import "../../../styles/root.module.scss";
+
+.user {
+    grid-column: span 3;
+    font-size:$font-size-16px;
+    color: $red;
+    font-family: $font-rubik-regular;
+    text-align: right;
+}

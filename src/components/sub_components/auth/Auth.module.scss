@@ -1,0 +1,18 @@
+@import "../../../styles/root.module.scss";
+
+.buttons {
+  grid-column: span 4;
+  @include flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1020px) {
+  .buttons {
+    grid-column: span 3;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .buttons {
+    display: none;
+  }
+}

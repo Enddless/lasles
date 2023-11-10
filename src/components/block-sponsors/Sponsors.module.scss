@@ -1,0 +1,14 @@
+@import "../../styles/root.module.scss";
+.wrapper {
+  @include wrapper;
+}
+.sponsors {
+  .logo {
+    grid-column: span 12;
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-top: 26px;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../styles/root.module.scss";
+
+.btn {
+  background: $transparent;
+  border: 2px solid $light-red;
+  padding: 13px 45px;
+  box-sizing: $border-box;
+  color: $light-red;
+  font-family: $font-rubik-regular;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: $border-radius-50px;
+
+  &:hover,
+  &:active {
+    background: $red;
+    color: $white;
+    @include transition;
+  }
+}
+
+.btn--0 {
+  border: none;
+  margin-right: 10px;
+  color: $dark-gray;
+}
+
+.btn--red {
+  background: $red;
+  border-radius: $border-radius-10px;
+  color: $white;
+  box-shadow: 0 4px 27px rgba(245, 56, 56, 0.35);
+  padding: 18px 79px;
+  font-family: $font-rubik-bold;
+  font-size: $font-size-16px;
+  &:hover {
+    color: $red;
+    background: $white;
+    @include transition;
+  }
+}
+.btn--select {
+  padding: 13px 63px;
+}
+
+@media screen and (max-width: 1020px) {
+  .btn {
+    padding: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../styles/root.module.scss";
+
+.socialLink {
+  @include flex;
+}
+.paragraph {
+  margin: 0 20px 30px 0;
+  overflow: hidden;
+  height: 30px;
+  width: 30px;
+  @include flex;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.1);
+    @include transition;
+  }
+}
+@media screen and (max-width: 475px) {
+  .socialLink {
+    justify-content: center;
+  }
+}

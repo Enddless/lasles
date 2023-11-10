@@ -1,0 +1,39 @@
+@import "../../../styles/root.module.scss";
+
+.navigation {
+  grid-column: span 5;
+  color: $gray;
+}
+.navigationContainer {
+  @include flex;
+  justify-content: space-evenly;
+}
+.navigationItem {
+  font-size: $font-size-16px;
+  cursor: pointer;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  .link:hover {
+    font-weight: 600;
+    color: $red;
+    @include transition;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .navigation {
+    grid-column: span 6;
+  }
+  .navigationItem {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .navigation {
+    display: none;
+  }
+}

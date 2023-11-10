@@ -1,0 +1,51 @@
+@import "../../../styles/root.module.scss";
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  color: $dark-gray;
+  font-family: $font-rubik-medium;
+  font-size: $font-size-35px;
+  line-height: $line-height-50px;
+  margin-bottom: 20px;
+}
+.mainTitle {
+  line-height: $line-height-70px;
+  font-size: $font-size-50px;
+}
+
+.subtitle {
+  color: $gray;
+  font-size: $font-size-16px;
+  font-weight: 400;
+  line-height: $line-height-30px;
+  margin-bottom: 20px;
+}
+
+.mainSubtitle {
+  margin-bottom: 65px;
+}
+.align {
+  text-align: left;
+}
+
+@media screen and (max-width: 785px) {
+  .title {
+    line-height: $line-height-40px;
+  }
+  .mainTitle {
+    line-height: $line-height-50px;
+  }
+  .subtitle {
+    line-height: $line-height-25px;
+    font-size: $font-size-18px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .title {
+    line-height: $line-height-50px;
+  }
+}

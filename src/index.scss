@@ -1,0 +1,42 @@
+@import "./styles/root.module.scss";
+
+@font-face {
+  font-family: $font-rubik-regular;
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: $font-rubik-medium;
+  src: url("../fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: $font-rubik-bold;
+  src: url("../fonts/Rubik-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-rubik-regular;
+  font-size: $font-size-20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $white;
+  max-width: $max-width-1440px;
+  margin: 0 auto;
+  user-select: none;
+
+}
+a,
+a:visited {
+  text-decoration:none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/root.module.scss";
+
+.wrapper {
+  @include wrapper;
+}
+.footer {
+  grid-column: span 12;
+  background: $light-gray;
+  color: $gray;
+  padding: 186px 0 100px;
+}
+.info {
+  grid-column: span 4;
+  @include flex;
+  flex-direction: column;
+}
+.title {
+  margin: 18px 0 30px;
+  font-size: $font-size-16px;
+  width: 95%;
+  line-height: $line-height-30px;
+}
+.copyright {
+  color: $medium-gray;
+}
+@media screen and (max-width: 765px) {
+  .info {
+    grid-column: span 12;
+    margin-bottom: 40px;
+  }
+}

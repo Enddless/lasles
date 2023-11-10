@@ -1,0 +1,30 @@
+@import "../../styles/root.module.scss";
+
+.wrapper {
+  @include wrapper;
+}
+.plans {
+  padding-top: 77px;
+  margin-bottom: 150px;
+}
+.cardsList {
+  grid-column: span 12;
+  padding-top: 42px;
+  align-items: start;
+  justify-items: end;
+  // @include grid;
+}
+
+.row {
+  grid-column: 4 / span 6;
+  margin: 0 auto;
+}
+@media screen and (max-width: 650px) {
+  .plans {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .row {
+    grid-column: span 12;
+  }
+}
